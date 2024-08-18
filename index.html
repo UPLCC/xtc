@@ -6,7 +6,7 @@
   </head>
   <body>	
 <p id="sj" class="sj">10:00</p>
-<div id="rj" class="rj" onclick="if(rjdksz == 0){dk();}"><img id="rjtp" class="rjtp" src="sz.jpg"/><center><h1 id="hypertext" class="hypertext" style="display:none;">Xiaomi Hyper<color style="color:#13aeff;">OS</color></h1></center></div>
+<div id="rj" class="rj" onclick="if(rjdksz == 0){dk();}"><img id="rjtp" class="rjtp" src="sz.jpg"/><center><h1 id="hypertext" class="hypertext" style="display:none;">UPLCC<color style="color:#13aeff;">OS</color></h1></center></div>
 <div id="xbt" class="xbt" onclick="if(rjgbsz == 1){rjgb();}"></div>
   </body>
 <style>
@@ -89,6 +89,14 @@ opacity:0;
 width:100vw;
 height:100vh;
 border-radius:30px;
+}
+}
+@keyframes dkc{
+0%{
+opacity:0;
+}
+100%{
+opacity:1;
 }
 }
 @keyframes gba{
@@ -202,6 +210,8 @@ rj.style.animationName="dka";
 rj.style.animationDuration="0.6s";
 rjtp.style.animationName="dkb";
 rjtp.style.animationDuration="0.6s";
+hypertext.style.animationName="dkc";
+hypertext.style.animationDuration="0.6s";
 setTimeout(function (){
 rjtp.style.animation="none";
 },300);
